@@ -28,20 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtDias = new System.Windows.Forms.TextBox();
             this.txtDistancia = new System.Windows.Forms.TextBox();
             this.lblDias = new System.Windows.Forms.Label();
             this.lblDistancia = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.txtDias = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // txtDias
-            // 
-            this.txtDias.Location = new System.Drawing.Point(196, 144);
-            this.txtDias.Name = "txtDias";
-            this.txtDias.Size = new System.Drawing.Size(77, 20);
-            this.txtDias.TabIndex = 11;
             // 
             // txtDistancia
             // 
@@ -88,6 +81,14 @@
             this.btnCalcular.TabIndex = 6;
             this.btnCalcular.Text = "Calcular Precio";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // txtDias
+            // 
+            this.txtDias.Location = new System.Drawing.Point(196, 144);
+            this.txtDias.Name = "txtDias";
+            this.txtDias.Size = new System.Drawing.Size(77, 20);
+            this.txtDias.TabIndex = 11;
             // 
             // frmFerrocarril
             // 
@@ -108,13 +109,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtDias;
         private System.Windows.Forms.TextBox txtDistancia;
         private System.Windows.Forms.Label lblDias;
         private System.Windows.Forms.Label lblDistancia;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.TextBox txtDias;
     }
 }
 
